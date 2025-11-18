@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
     return (
-        <div className="w-full session h-full bg-[#010101]">
+        <div id="services" className="w-full session h-full bg-[#010101]">
             <div className="max-w-[1200px] mx-auto">
                 <div className="upper flex flex-col lg:flex-row items-center justify-between ">
                     <div>
@@ -80,7 +80,7 @@ const Services = () => {
                     <div class="lg:col-span-1 duration-200 hover:shadow-[0_2px_4px_0_#FF541F,0_4px_8px_0_#FFFFFF,0_8px_20px_0_#272829B3,0_12px_30px_0_#D9D9D9D9] bg-[linear-gradient(to_top_left,var(--primary-color),rgba(39,40,41,0.7)_40%)] p-4 rounded-[20px]  flex flex-col justify-between!">
                         <div className="flex justify-between items-center">
                             <div className="text-xs text-(--text-color) w-[70%]">
-                                Launch high-quality Android and iOS apps with user-friendly design, scalable architecture, and seamless functionality for your business.    
+                                Launch high-quality Android and iOS apps with user-friendly design, scalable architecture, and seamless functionality for your business.
                             </div>
                             <div>
                                 <img

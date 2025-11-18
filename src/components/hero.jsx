@@ -7,7 +7,7 @@ import CountUp from "./countup"
 const Hero = () => {
     return (
         <>
-            <main className="relative flex flex-col items-center justify-between pt-[200px] text-center gap-6 px-10">
+            <main id="home" className="relative flex flex-col items-center justify-between pt-[200px] text-center gap-6 px-10">
                 <div className="upper-section flex flex-col items-center justify-center text-center gap-6">
                     <div className="reviews border flex items-center justify-center border-white/15 max-w-[340px] h-[75px] w-full bg-linear-to-r px-[23px] py-[15px] from-[rgba(255,84,31,0.13)] to-[rgba(255,84,31,0.04)]  rounded-full">
                         <div className="images relative  w-full h-full flex items-center -space-x-4">
@@ -68,7 +68,7 @@ const Hero = () => {
                             delay={150}
                             animateBy="words"
                             direction="top"
-                            className="heading text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] max-w-4xl text-white/75 text-center"
+                            className="heading flex items-center justify-center text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] max-w-4xl text-white/75 text-center!"
                         />
                     </div>
                     <p className="max-w-[650px] text-(--text-color) text-[clamp(0.9rem,2vw,1.1rem)]">
@@ -83,7 +83,9 @@ const Hero = () => {
                         />
                     </p>
                     <div className="btns flex gap-6">
-                        <Button text={"Scroll Down"} variant={"primary"} />
+                        <a href="#services">
+                            <Button text={"Scroll Down"} variant={"primary"} />
+                        </a>
                         {/* <Button text={"See Details"} /> */}
                     </div>
                     {/* Achievements Section */}

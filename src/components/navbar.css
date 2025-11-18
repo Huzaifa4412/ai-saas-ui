@@ -2,3 +2,20 @@
     width: auto;
     height: 40px;
 }
+
+/* Add this to your global CSS if the navbar still overflows */
+@media (max-width: 768px) {
+  nav {
+    margin: 0 auto;
+  }
+}
+
+/* Ensure smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden;
+}
