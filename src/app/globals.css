@@ -5,8 +5,6 @@
 
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 :root {
     --primary-color: #ff541f;
     --secondary-color: #ffd700;
