@@ -1,126 +1,129 @@
+"use client";
+import React from "react";
 import Button from "./button";
-import "./hero.css";
-import BlurText from "./blurtext";
-import TextType from "./typetext";
-import CountUp from "./countup"
+import FluidHeader from "./FluidHeader";
+import GlassOrchestra from "./GlassOrchestra";
+import CountUp from "./countup";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 const Hero = () => {
     return (
-        <>
-            <main id="home" className="relative flex flex-col items-center justify-between pt-[200px] text-center gap-6 px-10">
-                <div className="upper-section flex flex-col items-center justify-center text-center gap-6">
-                    <div className="reviews border flex items-center justify-center border-white/15 max-w-[340px] h-[75px] w-full bg-linear-to-r px-[23px] py-[15px] from-[rgba(255,84,31,0.13)] to-[rgba(255,84,31,0.04)]  rounded-full">
-                        <div className="images relative  w-full h-full flex items-center -space-x-4">
-                            {Array.from({ length: 5 }, (_, i) => i + 1).map(
-                                (item, index) => {
-                                    return (
-                                        <img
-                                            key={index}
-                                            src={`/hero-r-${index + 1}.png`}
-                                            className={`sm:size-12 size-9 rounded-full border border-white/70 object-cover z-[${index}]`}
-                                        />
-                                    );
-                                }
-                            )}
-                        </div>
-                        <div className="text -translate-x-4 flex flex-col items-center justify-between gap-1">
-                            <div className="stars flex">
-                                {Array.from({ length: 5 }, (_, i) => i + 1).map(
-                                    (item, index) => {
-                                        return (
-                                            <img
-                                                key={index}
-                                                src="/star.svg"
-                                                className="inline-block sm:size-3 size-2.5 ml-1"
-                                            />
-                                        );
-                                    }
-                                )}
-                            </div>
-                            <span className="text-white/75 min-[400px]:text-xs text-[10px] ml-4 ">
-                                150+
-                                Happy clients
-                            </span>
-                        </div>
-                    </div>
-                    {/* Main heading */}
-                    <div className="flex items-center justify-center flex-col">
-                        <BlurText
-                            text="Automate"
-                            delay={150}
-                            animateBy="words"
-                            direction="top"
-                            className="heading text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] max-w-4xl text-white/75 text-center"
-                        />
-                        <span className="text-(--primary-color)">
-                            <BlurText
-                                text="Intelligence"
-                                delay={150}
-                                animateBy="words"
-                                direction="top"
-                                className="heading text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] max-w-4xl  text-center text-(--primary-color)"
-                            />
+        <section
+            id="home"
+            className="relative min-h-screen flex flex-col items-center justify-center px-6 lg:px-20 pt-32 pb-20 overflow-hidden"
+        >
+            <GlassOrchestra />
+
+            <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+                {/* Left Side: Text Content */}
+                <div className="flex-1 text-left z-10">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8"
+                    >
+                        <span className="flex size-2 bg-green-500 rounded-full animate-pulse" />
+                        <span className="text-xs font-medium text-white/60 tracking-wider">
+                            SCALABLE AI SOLUTIONS
                         </span>
-                        .
-                        <br />{" "}
-                        <BlurText
-                            text="Accelerate Growth."
-                            delay={150}
-                            animateBy="words"
-                            direction="top"
-                            className="heading flex items-center justify-center text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] max-w-4xl text-white/75 text-center!"
-                        />
-                    </div>
-                    <p className="max-w-[650px] text-(--text-color) text-[clamp(0.9rem,2vw,1.1rem)]">
-                        <TextType
-                            text={[
-                                "At SyenxaTech, we deliver smart, scalable, and high-performance AI solutions designed to streamline your business operations...",
-                            ]}
-                            typingSpeed={75}
-                            pauseDuration={1500}
-                            showCursor={true}
-                            cursorCharacter="|"
-                        />
-                    </p>
-                    <div className="btns flex gap-6">
-                        <a href="#services">
-                            <Button text={"Scroll Down"} variant={"primary"} />
-                        </a>
-                        {/* <Button text={"See Details"} /> */}
-                    </div>
-                    {/* Achievements Section */}
+                    </motion.div>
+
+                    <FluidHeader
+                        text="Automate Your Business with Intelligent Automation"
+                        className="mb-8"
+                    />
+
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.5 }}
+                        className="text-white/60 text-lg lg:text-xl max-w-xl mb-10 leading-relaxed font-light"
+                    >
+                        At Syenxa Tech, we provide smart, scalable AI Calling
+                        Agents and automation solutions designed to enhance
+                        sales, improve customer support, and optimize business
+                        operations. Our AI technology works around the clock,
+                        helping businesses worldwide convert more leads,
+                        reduce costs, and grow faster.
+                    </motion.p>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.7 }}
+                        className="flex flex-wrap gap-6"
+                    >
+                        <Button text="Explore Services" variant="primary" />
+                        <Button text="Book a Demo" variant="secondary" />
+                    </motion.div>
                 </div>
-                <div className="achievements glass-card w-full mb-5 mx-auto min-h-[210px] flex items-center rounded-xl border border-white/10">
-                    <div className="w-full h-full flex justify-center items-center divide-x divide-white/20 gap-6 flex-wrap">
-                        <Achievement title={"Client"} value={"120k"} />
-                        <Achievement title={"Projects"} value={"150"} />
-                        <Achievement title={"5-Star Review"} value={"32k"} />
-                    </div>
+
+                {/* Right Side: Visual Element / Social Proof */}
+                <div className="flex-1 relative w-full lg:w-auto h-[400px] lg:h-[600px] flex items-center justify-center">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.2, delay: 0.3 }}
+                        className="relative w-full h-full flex items-center justify-center"
+                    >
+                        {/* Featured Achievment Cards */}
+                        <div className="absolute top-10 right-0 lg:-right-4 p-6 bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[2rem] shadow-2xl rotate-6 hover:rotate-0 transition-transform duration-500">
+                            <Achievement title="Happy Clients" value={150} />
+                        </div>
+
+                        <div className="absolute bottom-20 left-0 lg:-left-4 p-6 bg-white/5 border border-white/10 backdrop-blur-2xl rounded-[2rem] shadow-2xl -rotate-6 hover:rotate-0 transition-transform duration-500">
+                            <Achievement
+                                title="AI Conversations"
+                                value={120}
+                                label="k"
+                            />
+                        </div>
+
+                        {/* Central Visual Blur/Glow */}
+                        <div className="size-64 bg-[#ff541f]/20 blur-[80px] rounded-full animate-pulse" />
+
+                        {/* Client avatars stack */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center -space-x-4">
+                            {[1, 2, 3, 4, 5].map((i) => (
+                                <motion.img
+                                    key={i}
+                                    whileHover={{ y: -10, zIndex: 10 }}
+                                    src={`/hero-r-${i}.png`}
+                                    alt={`Client ${i}`}
+                                    className="size-16 rounded-full border-2 border-white/20 shadow-xl object-cover cursor-pointer bg-zinc-900"
+                                />
+                            ))}
+                        </div>
+                    </motion.div>
                 </div>
-            </main>
-        </>
+            </div>
+
+            {/* Bottom Row: Additional Social Proof / Logos if needed */}
+        </section>
     );
 };
 
-export default Hero;
-
-const Achievement = ({ title, value }) => {
+const Achievement = ({ title, value, label = "+" }) => {
     return (
-        <div className="flex-1 min-w-[150px] min-h-[100px] p-5">
-            <div className="title text-(--primary-color) text-xl mb-2 text-[clamp(0.9rem,1vw,1.5rem)]">
+        <div className="flex flex-col gap-1 items-start min-w-[120px]">
+            <span className="text-white/40 text-xs font-medium uppercase tracking-widest">
                 {title}
-            </div>
-            <div className="value text-5xl font-semibold text-[clamp(2.5rem,4vw,4rem)]">
+            </span>
+            <div className="flex items-baseline gap-1">
                 <CountUp
                     from={0}
                     to={value}
-                    separator="+"
-                    direction="up"
-                    duration={1}
-                    className="count-up-text"
-                />{" "}
-                +
+                    duration={2}
+                    className="text-4xl font-bold text-white tracking-tighter"
+                />
+                <span className="text-2xl font-light text-[#ff541f]">
+                    {label}
+                </span>
             </div>
         </div>
     );
 };
+
+export default Hero;

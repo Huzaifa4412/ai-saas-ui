@@ -12,17 +12,38 @@ export default function Footer() {
                         >
                             <img
                                 src="/logo.svg"
-                                alt="SyenxaTech"
+                                alt="Synexa Tech Logo"
                                 className="size-10 text-black "
                             />
 
                             <span className=" font-bold lg:inline-block">
-                                SyenxaTech
+                                Synexa Tech
                             </span>
                         </a>
 
+                        <div className="contact-info mt-6 space-y-2">
+                            <p className="text-sm dark:text-gray-400">
+                                Email:{" "}
+                                <a
+                                    href="mailto:info@syenxatech.com"
+                                    className="hover:text-(--primary-color) transition-colors"
+                                >
+                                    info@syenxatech.com
+                                </a>
+                            </p>
+                            <p className="text-sm dark:text-gray-400">
+                                Phone:{" "}
+                                <a
+                                    href="tel:+17373076969"
+                                    className="hover:text-(--primary-color) transition-colors"
+                                >
+                                    +1 (737) 307-6969
+                                </a>
+                            </p>
+                        </div>
+
                         <p className="text-sm dark:text-gray-400 mt-5">
-                            © {new Date().getFullYear()} SyenxaTech. All rights
+                            © {new Date().getFullYear()} Synexa Tech. All rights
                             reserved.
                         </p>
                     </div>

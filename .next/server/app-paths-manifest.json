@@ -1,0 +1,7 @@
+{
+  "/ai-calling-agents/page": "app/ai-calling-agents/page.js",
+  "/page": "app/page.js",
+  "/services/page": "app/services/page.js",
+  "/ai-chatbots/page": "app/ai-chatbots/page.js",
+  "/about/page": "app/about/page.js"
+}

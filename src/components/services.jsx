@@ -1,100 +1,147 @@
+/* eslint-disable no-unused-vars */
+"use client";
 import React from "react";
+import { motion } from "motion/react";
+import { BorderBeam } from "./ui/border-beam";
+import {
+    Cpu,
+    MessageSquare,
+    Globe,
+    Smartphone,
+    ArrowRight,
+} from "lucide-react";
+import Link from "next/link";
 
 const Services = () => {
+    const services = [
+        {
+            title: "AI Calling Agent",
+            description:
+                "Boost your customer outreach with automated calling solutions, appointment reminders, and follow-up services powered by smart voice technology. Trusted by businesses worldwide.",
+            icon: Cpu,
+            href: "/ai-calling-agents",
+            color: "#ff541f",
+            span: "lg:col-span-1",
+        },
+        {
+            title: "Website Development",
+            description:
+                "High-performance, SEO-optimized, and mobile-responsive websites designed to convert visitors into loyal customers.",
+            icon: Globe,
+            href: "/website-development",
+            color: "#ffd700",
+            span: "lg:col-span-2",
+        },
+        {
+            title: "AI Chatbot",
+            description:
+                "Intelligent chat automation across social platforms, providing 24/7 support and lead qualification for your growing business.",
+            icon: MessageSquare,
+            href: "/ai-chatbots",
+            color: "#ff541f",
+            span: "lg:col-span-2",
+        },
+        {
+            title: "Digital Marketing & Apps",
+            description:
+                "Custom Android and iOS mobile applications with scalable architecture and seamless user experiences for national brands.",
+            icon: Smartphone,
+            href: "/digital-marketing",
+            color: "#ffd700",
+            span: "lg:col-span-1",
+        },
+    ];
+
     return (
-        <div id="services" className="w-full session h-full bg-[#010101]">
-            <div className="max-w-[1200px] mx-auto">
-                <div className="upper flex flex-col lg:flex-row items-center justify-between ">
-                    <div>
-                        <div className="heading text-xl lg:text-2xl">
+        <section
+            id="services"
+            className="w-full py-24 bg-black overflow-hidden"
+        >
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="flex flex-col lg:flex-row items-end justify-between mb-16 gap-8">
+                    <div className="max-w-2xl">
+                        <motion.span
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="text-[#ff541f] text-sm font-bold tracking-[0.2em] uppercase mb-4 block"
+                        >
+                            What We Do
+                        </motion.span>
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            className="text-4xl lg:text-6xl font-bold text-white tracking-tighter leading-tight"
+                        >
                             Our Services &{" "}
-                            <span className="text-(--primary-color)"> Expertise</span>.
-                        </div>
-                        <div className="text text-(--text-color) text-xs lg:text-sm mt-4 ">
-                            Unlock the full potential of your creativity with
-                            our AI-powered design assistant. Explore new
-                            dimensions of design
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                        <img
-                            src="/services-cube.svg"
-                            className="size-[155px]"
-                            alt=""
-                        />
+                            <span className="text-[#ff541f]">Expertise</span>.
+                        </motion.h2>
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="text-white/40 text-lg mt-6 leading-relaxed font-light"
+                        >
+                            Unlock the full potential of your business with our
+                            cutting-edge AI Calling Agents, custom AI Chatbots,
+                            and premium Digital solutions.
+                        </motion.p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1  lg:grid-cols-3  grid-rows-2 gap-4">
-                    {/* 1st Item */}
-                    <div class="lg:col-span-1 duration-200 hover:shadow-[0_2px_4px_0_#FF541F,0_4px_8px_0_#FFFFFF,0_8px_20px_0_#272829B3,0_12px_30px_0_#D9D9D9D9] bg-[linear-gradient(to_top_left,var(--primary-color),rgba(39,40,41,0.7)_40%)] p-4 rounded-[20px]  flex flex-col justify-between!">
-                        <div className="flex justify-between items-center">
-                            <div className="text-xs text-(--text-color) w-[70%]">
-                                Boost your customer outreach with automated calling solutions, appointment reminders, and follow-up services powered by smart voice technology.
 
-
-                            </div>
-                            <div>
-                                <img
-                                    src="arrow.svg"
-                                    className="size-[100px]"
-                                    alt="Arrow"
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    {services.map((service, idx) => (
+                        <motion.div
+                            key={idx}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: idx * 0.1 }}
+                            className={`${service.span} relative group`}
+                        >
+                            <div className="h-full p-8 rounded-[2.5rem] bg-zinc-950/50 border border-white/5 backdrop-blur-xl flex flex-col justify-between transition-all duration-500 hover:bg-zinc-900/60 hover:border-white/10 overflow-hidden min-h-[320px]">
+                                <BorderBeam
+                                    size={200}
+                                    duration={12}
+                                    delay={idx * 2}
+                                    colorFrom={service.color}
+                                    colorTo={service.color}
+                                    className="opacity-0 group-hover:opacity-100"
                                 />
-                            </div>
-                        </div>
-                        <div className="text-2xl">AI Calling Agent</div>
-                    </div>
 
-                    {/* 2nd Item */}
-                    <div class="lg:col-span-2 duration-200 hover:shadow-[0_2px_4px_0_#FF541F,0_4px_8px_0_#FFFFFF,0_8px_20px_0_#272829B3,0_12px_30px_0_#D9D9D9D9] bg-[#272829]/70 p-4 rounded-[20px]  flex flex-col justify-between!">
-                        <div className="flex justify-between items-center">
-                            <div className="text-xs text-(--text-color) w-[60%]">
-                                Get a responsive, fast, and modern website designed to showcase your brand, generate leads, and convert visitors effortlessly.
+                                <div className="z-10">
+                                    <div className="flex justify-between items-start mb-8">
+                                        <div
+                                            className={`p-4 rounded-2xl bg-white/5 text-white/80 group-hover:bg-[#ff541f]/10 group-hover:text-[#ff541f] transition-all duration-300`}
+                                        >
+                                            <service.icon className="w-8 h-8" />
+                                        </div>
+                                        <Link
+                                            href={service.href}
+                                            className="size-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all group-hover:rotate-45"
+                                        >
+                                            <ArrowRight className="w-5 h-5" />
+                                        </Link>
+                                    </div>
+                                    <h3 className="text-3xl font-bold text-white mb-4 tracking-tighter">
+                                        {service.title}
+                                    </h3>
+                                    <p className="text-white/40 text-sm leading-relaxed font-light max-w-[80%]">
+                                        {service.description}
+                                    </p>
+                                </div>
 
-
+                                {/* Subtle glow on hover */}
+                                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#ff541f]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                             </div>
-                            <div>
-                                <img
-                                    src="arrow.svg"
-                                    className="size-[100px]"
-                                    alt="Arrow"
-                                />
-                            </div>
-                        </div>
-                        <div className="text-2xl">Website Development</div>
-                    </div>
-                    <div class="lg:col-span-2 duration-200 hover:shadow-[0_2px_4px_0_#FF541F,0_4px_8px_0_#FFFFFF,0_8px_20px_0_#272829B3,0_12px_30px_0_#D9D9D9D9] bg-[#272829]/70 p-4 rounded-[20px]  flex flex-col justify-between!">
-                        <div className="flex justify-between items-center">
-                            <div className="text-xs text-(--text-color) w-[60%]">
-                                Streamline your customer interactions across WhatsApp, Facebook, and Instagram with advanced chat automation and instant responses.
-                            </div>
-                            <div>
-                                <img
-                                    src="arrow.svg"
-                                    className="size-[100px]"
-                                    alt="Arrow"
-                                />
-                            </div>
-                        </div>
-                        <div className="text-2xl">AI Chatbot</div>
-                    </div>
-                    <div class="lg:col-span-1 duration-200 hover:shadow-[0_2px_4px_0_#FF541F,0_4px_8px_0_#FFFFFF,0_8px_20px_0_#272829B3,0_12px_30px_0_#D9D9D9D9] bg-[linear-gradient(to_top_left,var(--primary-color),rgba(39,40,41,0.7)_40%)] p-4 rounded-[20px]  flex flex-col justify-between!">
-                        <div className="flex justify-between items-center">
-                            <div className="text-xs text-(--text-color) w-[70%]">
-                                Launch high-quality Android and iOS apps with user-friendly design, scalable architecture, and seamless functionality for your business.
-                            </div>
-                            <div>
-                                <img
-                                    src="arrow.svg"
-                                    className="size-[100px]"
-                                    alt="Arrow"
-                                />
-                            </div>
-                        </div>
-                        <div className="text-2xl">App Development</div>
-                    </div>
+                        </motion.div>
+                    ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
