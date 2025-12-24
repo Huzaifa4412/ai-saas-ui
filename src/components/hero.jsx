@@ -4,7 +4,6 @@ import Button from "./button";
 import FluidHeader from "./FluidHeader";
 import GlassOrchestra from "./GlassOrchestra";
 import CountUp from "./countup";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
 const Hero = () => {

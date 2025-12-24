@@ -6,6 +6,7 @@ import BookCal from "@/components/book-calcom";
 import SmoothScroll from "./SmoothScroll";
 
 export const metadata = {
+    metadataBase: new URL("https://syenxatech.com"),
     title: "AI Calling Agents & Digital Solutions | Syenxa Tech",
     description:
         "Syenxa Tech builds AI Calling Agents, chatbots, websites, apps & automation solutions for businesses worldwide. Boost sales & automate support 24/7.",
