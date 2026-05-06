@@ -1,164 +1,35 @@
 {
   "pages": {
-    "/_not-found/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/app/_not-found/page-55f864598ba8494a.js"
-    ],
     "/layout": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/css/f4f106c5797e5799.css",
-      "static/css/e2db1bbad7810b44.css",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/391-c8fe4864193199d6.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/app/layout-ccafa4b5794cfb4f.js"
-    ],
-    "/blog/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/app/blog/page-4e30a1cbe9730a96.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
     ],
     "/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/192-1993cd68c70a06be.js",
-      "static/chunks/246-6eead423eeabab33.js",
-      "static/chunks/app/page-8c17e4de90d88181.js"
-    ],
-    "/ai-calling-agents/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/ai-calling-agents/page-656cbac76c5a9f36.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/about/page-b6aca9f01a8cdebe.js"
-    ],
-    "/ai-chatbots/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/ai-chatbots/page-08826aea0f79cf29.js"
-    ],
-    "/blog/ai-automation-solutions-reduce-costs/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/blog/ai-automation-solutions-reduce-costs/page-ae1aa27700cd2967.js"
-    ],
-    "/blog/how-ai-calling-agents-are-transforming-sales/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/blog/how-ai-calling-agents-are-transforming-sales/page-adeafab3c1eced06.js"
-    ],
-    "/blog/syenxa-tech-leading-ai-solutions/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/blog/syenxa-tech-leading-ai-solutions/page-9b4abc487eb4928e.js"
-    ],
-    "/blog/top-benefits-of-ai-chatbots/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/blog/top-benefits-of-ai-chatbots/page-c1c6ca120adaca25.js"
-    ],
-    "/digital-marketing/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/digital-marketing/page-dac9400abfe00970.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/services/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/192-1993cd68c70a06be.js",
-      "static/chunks/660-e2af3a1a9cf1ba99.js",
-      "static/chunks/app/services/page-ac068004c07dd13a.js"
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/services/page.js"
     ],
-    "/website-development/page": [
-      "static/chunks/webpack-70d079420b076918.js",
-      "static/chunks/4bd1b696-b085869443a89ac3.js",
-      "static/chunks/517-2fb33ef85400712d.js",
-      "static/chunks/main-app-2bb83644dda80c8b.js",
-      "static/chunks/752-cd5cbe99d5759a76.js",
-      "static/chunks/897-6e6776dfe6b2260d.js",
-      "static/chunks/195-4fba865d27de0846.js",
-      "static/chunks/272-8928d18ab92865fc.js",
-      "static/chunks/97-f437485a6ff3a4c8.js",
-      "static/chunks/app/website-development/page-9da61e96285aaec0.js"
+    "/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/page.js"
+    ],
+    "/ai-calling-agents/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ai-calling-agents/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
