@@ -1,7 +1,16 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/blog/page": "app/blog/page.js",
   "/page": "app/page.js",
-  "/services/page": "app/services/page.js",
+  "/blog/ai-automation-solutions-reduce-costs/page": "app/blog/ai-automation-solutions-reduce-costs/page.js",
+  "/ai-chatbots/page": "app/ai-chatbots/page.js",
+  "/ai-calling-agents/page": "app/ai-calling-agents/page.js",
   "/about/page": "app/about/page.js",
-  "/ai-calling-agents/page": "app/ai-calling-agents/page.js"
+  "/blog/how-ai-calling-agents-are-transforming-sales/page": "app/blog/how-ai-calling-agents-are-transforming-sales/page.js",
+  "/blog/top-benefits-of-ai-chatbots/page": "app/blog/top-benefits-of-ai-chatbots/page.js",
+  "/blog/syenxa-tech-leading-ai-solutions/page": "app/blog/syenxa-tech-leading-ai-solutions/page.js",
+  "/digital-marketing/page": "app/digital-marketing/page.js",
+  "/services/page": "app/services/page.js",
+  "/website-development/page": "app/website-development/page.js"
 }
